@@ -25,12 +25,12 @@ function insertEntry() {
   var doc = DocumentApp.getActiveDocument();
   var body = DocumentApp.getActiveDocument().getBody();
   var par = body.appendParagraph(date).setHeading(DocumentApp.ParagraphHeading.HEADING2);
-  par = body.appendParagraph('Preparation for the day').setHeading(DocumentApp.ParagraphHeading.HEADING3);
+  par = body.appendParagraph('Prepare for the day to come').setHeading(DocumentApp.ParagraphHeading.HEADING3);
   par = body.appendParagraph('\n').setHeading(DocumentApp.ParagraphHeading.NORMAL);
   var position = doc.newPosition(par, 0);
   doc.setCursor(position);
   par = body.appendParagraph('Today I will be:').setHeading(DocumentApp.ParagraphHeading.NORMAL).setBold(true);  
-  par = body.appendParagraph('Reflection on the day').setHeading(DocumentApp.ParagraphHeading.HEADING3);
+  par = body.appendParagraph('Reflecti on the day that passed').setHeading(DocumentApp.ParagraphHeading.HEADING3);
   par = body.appendParagraph('\n').setHeading(DocumentApp.ParagraphHeading.NORMAL);
   par = body.appendParagraph('Lesson learned:\n').setHeading(DocumentApp.ParagraphHeading.NORMAL).setBold(true).appendHorizontalRule();  
 }
